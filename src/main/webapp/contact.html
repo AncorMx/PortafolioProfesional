@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto - Angel Cortez, Ingeniero en Software">
+    <title>Contacto | Angel Cortez</title>
+
+    <link rel="icon" type="image/png" href="images/IngAngelCortez.png">
+    <link rel="stylesheet" type="text/css" href="./styles/Styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">Sobre mi</a>
+            <a href="work.html">Proyectos</a>
+            <a href="writting.html">Publicaciones</a>
+            <a href="contact.html" class="active">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="title">
+            <div class="title-texto">
+                <h1>Contacto</h1>
+                <p class="rol">¿Tienes un proyecto? ¡Hablemos!</p>
+            </div>
+        </section>
+
+        <section id="seccion-formulario">
+            <div class="texto-columna">
+                <div class="form-card">
+                    <h2>Formulario de contacto</h2>
+                    <form action="https://mibackend.com/contacto" method="post">
+                        
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo</label>
+                            <input type="text" id="nombre" placeholder="Ej. Angel Cortez" name="nombre">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" placeholder="ejemplo@hotmail.com" name="correo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tel">Teléfono</label>
+                            <input type="tel" id="telefono" placeholder="6441023456" name="telefono">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="motivo">Motivo de contacto</label>
+                            <select name="motivo-contacto" id="motivo">
+                                <option value="">Seleccione una opción</option>
+                                <option value="Trabajo">Propuesta de trabajo</option>
+                                <option value="Colaboracion">Colaboración</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group radio-group">
+                            <label>Preferencia de contacto:</label>
+                            <div class="radio-options">
+                                <input type="radio" id="contacto-correo" name="metodo-contacto" value="correo">
+                                <label for="contacto-correo">Correo</label>
+                                <input type="radio" id="contacto-wha" name="metodo-contacto" value="whatsapp">
+                                <label for="contacto-wha">WhatsApp</label>
+                            </div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                            <button type="reset" class="btn-secondary">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section>
+            <p>Sígueme en mis redes:</p>
+            <a href="https://www.instagram.com/angel_ca0" target="_blank">Instagram</a>
+            <a href="https://www.x.com/angel_ca0">X</a>
